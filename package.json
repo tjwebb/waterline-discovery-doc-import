@@ -1,0 +1,28 @@
+{
+  "name": "waterline-discovery-doc-import",
+  "version": "0.0.0",
+  "description": "Import a Google Discovery Document into a Waterline ORM",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tjwebb/waterline-discovery-doc-import.git"
+  },
+  "keywords": [
+    "sails",
+    "sails.js",
+    "waterline",
+    "google",
+    "discovery",
+    "document",
+    "import"
+  ],
+  "author": "Travis Webb <me@traviswebb.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjwebb/waterline-discovery-doc-import/issues"
+  },
+  "homepage": "https://github.com/tjwebb/waterline-discovery-doc-import"
+}
