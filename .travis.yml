@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - '0.10'
+  - '0.11'
+
+notifications:
+  email: false
+
+deploy:
+  provider: npm
+  email: me@traviswebb.com
+  api_key:
+    secure: Ljed+EZmKp6IKU8hnMCo1Sb4nDQae+f+TQFg6HrtvrXYrJfNfdrXmMJdneKDwr3b3lEwZ0D5SUvZqIXi6oBxBCebc4InTsmrh073GMUtD/JCADGUx5vD3DzvPxzyfttNTLjayCV6frRqcJEFJGFHi7qm7yv7UunjHjp3uIIlvwo=
+  on:
+    tags: true
+    repo: tjwebb/waterline-discovery-doc-import
+    all_branches: true
