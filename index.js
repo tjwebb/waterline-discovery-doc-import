@@ -16,13 +16,13 @@ function createAttributes (schema, doc) {
   return _.mapValues(schema.properties, function (property, name) {
     var ref = property.$ref || (property.items && property.items.$ref) || '';
 
-    return {
+    return _.compact({
       type: getType(property),
-      //notNull: !!property.required,
-      //model: property.$ref,
-      //collection: property.items ? property.items.$ref : undefined,
-      //via: ref.split('/')[1] || undefined
-    };
+      notNull: !!property.required,
+      model: property.$ref,
+      collection: property.items ? property.items.$ref : undefined,
+      via: ref.split('/')[1] || undefined
+    });
   });
 }
 
