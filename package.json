@@ -1,6 +1,6 @@
 {
   "name": "waterline-discovery-doc-import",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Import a Google Discovery Document into a Waterline ORM",
   "main": "index.js",
   "scripts": {
