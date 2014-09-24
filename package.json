@@ -26,12 +26,12 @@
   },
   "homepage": "https://github.com/tjwebb/waterline-discovery-doc-import",
   "devDependencies": {
-    "google-discovery-document": "^0.1.4",
     "mocha": "^1.21.4",
     "sails-disk": "^0.10.4",
     "sails-memory": "^0.10.3"
   },
   "dependencies": {
+    "google-discovery-document": "^0.1.4",
     "lodash": "^2.4.1",
     "waterline": "^0.10.9"
   }
