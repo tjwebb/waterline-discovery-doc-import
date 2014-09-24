@@ -6,6 +6,7 @@ function createModel (schema, name, doc, connection) {
     dynamicFinders: false,
     associationFinders: false,
     identity: name.toLowerCase(),
+    globalId: name,
     connection: connection,
     attributes: createAttributes(schema, doc)
   };
