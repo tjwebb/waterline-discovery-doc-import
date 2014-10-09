@@ -42,17 +42,14 @@ function getType (property) {
  * 
  * @param doc - a google discovery doc (restDescription)
  */
-exports.createCollections = function (doc, connection) {
+exports.createCollections = function (doc, _connection) {
+  var connection = _connection || 'sailsDiscovery';
+
   return _.compact(
-    _.map(doc.schemas, function (schema, name) {
-      var model = createModel(schema, name, doc, connection || 'sailsDiscovery');
-      if (_.isObject(model)) {
-        return Waterline.Collection.extend(model);
-      }
-      else {
-        console.log('adsdadsadasdsadas');
-        return;
-      }
+    _.map(doc.resources, function (resource, name) {
+      var schema = doc.shemas[name];
+      var model = createModel(schema, name, doc, connection);
+      return Waterline.Collection.extend(model);
     })
   );
 };
